@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    padding: 20px;
+}
+.restName{
+    -webkit-text-fill-color: white;
+}
+.restNameDesc{
+    -webkit-text-fill-color: white;
+}
+.headerContactInfo{
+    -webkit-text-fill-color: white;
+}
+
+nav{
+    background-color: #393e46;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+nav li{
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+nav li a{
+    text-decoration: none;
+    -webkit-text-fill-color: white;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+nav li :hover{
+    -webkit-text-fill-color: #222831;
+}
+.gifContainer{
+    width: 100%;
+    height: 100%;
+}
+.fryingVideo{
+    height: auto;
+    width: 100%;
+    
+}
+.fryingImg{
+    width: 100%;
+    height: auto;
+}
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    display: flex;
+
+}
+.restName{
+    font-size:3rem;
+    text-align: center;
+}
+.restNameDesc{
+    font-size: 2rem;
+    text-align: center;
+}
+.headerInfo{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.headerContactInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.number{
+    font-size: 1rem;
+    margin: 5px;
+}
+.email{
+    font-size: 1rem;
+    margin: 5px;
+    text-decoration: none;
+}
+.headerIcons{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+}
+.headerIcons a{
+    display: flex;
+    align-items: center;
+}
+.headerIcons a img{
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.headerLogoContainer img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+
+}
+.danielsDesc{
+    text-align: center;
+    background-color: black;
+
+}
+.danielDescText{
+    -webkit-text-fill-color: white;
+    padding: 0px 20%;
+}
+.danielDescLine{
+    -webkit-text-fill-color: white;
+}
+.danielFoodImg{
+    width: 50%;
+    height: auto;
+}
+.valuesContainer{
+    display: flex;
+    flex-direction:row;
+    padding: 0% 12%;
+}
+.valueTextContainer{
+    padding: 20px;
+    -webkit-text-fill-color: white;
+}
+.valueTextContainer h1{
+    -webkit-text-fill-color: #f96d00;
+}
+.servicesContainer{
+    background-color: #f2f2f2;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.servicesContainer h1{
+    margin: 0px;
+    padding: 10px;
+}
+.servicesContainer h2{
+    padding: 0px 20%;
+    margin: 0px;
+}
+.servicesContainer p{
+    padding: 0px 20%;
+    margin: 5px;
+}
+.cateringContainer{
+    background-color: black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    -webkit-text-fill-color: white;
+}
+.cateringContainer h1{
+    margin: 0px;
+    padding: 10px;
+}
+.cateringContainer h2{
+    padding: 0px 20%;
+    margin: 0px;
+}
+.cateringContainer p{
+    padding: 0px 20%;
+    margin: 5px;
+}
+.galleryButton{
+    -webkit-text-fill-color: #f96d00;
+}
+
+
+.contactContainer{
+    background-color: black;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    margin: 0;
+}
+.contactTextContainer{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.addressContainer{
+    flex: 1;
+}
+.addressContainer h1{
+    -webkit-text-fill-color: #f96d00;
+}
+.contactinfoContainer{
+    flex: 1;
+}
+.contactinfoContainer h1{
+    -webkit-text-fill-color: #f96d00;
+}
+
+.hoursContainer{
+    flex: 1;
+}
+.hoursContainer h1{
+    -webkit-text-fill-color: #f96d00;
+}
+.mapContainer{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+}
+
+.map{
+    text-align: center;
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .valuesContainer{
+        flex-wrap: wrap;
+    }
+    .danielFoodImg{
+        width: 100%;
+    }
+    .danielDescLine{
+        display: none;
+    }
+}
