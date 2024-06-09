@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniels Kitchen Food Truck and Catering</title>
     <link rel="stylesheet" href="mainPage.css">
+    <script src="danielsKitchen.js"></script>
+    
 </head>
 <header id="Main">
     <div class="pageTitle">
@@ -30,12 +32,13 @@
     </div>
 </header>
 
-<nav>
-    <li><a href="#Main">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+<nav id="navbar">
+    <li><a onclick="home()">Home</a></li>
+    <li><a onclick="services()">Services</a></li>
+    <li><a onclick="gallery()">Gallery</a></li>
     <li><a href="https://fromtherestaurant.com/daniels-kitchen/menu/850-Woodside-Rd/" target="_blank">Order now</a></li>
 </nav>
+<script src="navbar.js"></script>
 
 <main>
     <div class="gifContainer">
@@ -84,13 +87,13 @@
         <h1>FOOD TRUCK SERVICES</h1>
         <h2>For visual examples of Executive Chef Danny's food truck dishes go to the gallery.</h2>
         <p>At Daniel's Kitchen Food Truck, Executive Chef Danny serves crispy barbacoa tacos, roasted vegan cauliflower tacos, and caramelized vegan portobello mushroom tacos. Executive Chef Danny also serves tasty burritos, delectable salads, and sweet flan desserts. Food truck operating hours are Monday through Saturday 10:30 AM-3:30 PM on 850 Woodside Road. Join us and enjoy the Mexican fusion cuisine!</p>
-        <a href="#gallery" class="galleryButton">Gallery</a>
+       
     </div>
     <div class="cateringContainer">
         <h1>CATERING SERVICES</h1>
         <h2>For visual examples of Executive Chef Danny's catering dishes go to the gallery.</h2>
         <p>Executive Chef Danny cooks a variety of exquisite dishes. A few client-favorite catering creations include fresh oven-cooked Italian pizza, savory Greek lamb chops, spicy grilled Mediterranean kabobs, and Latin American fusion tacos. Executive Chef Danny can cater to as many people as you wish. His goal is to make your catering events memorable and one of a kind!</p>
-        <a href="#gallery" class="galleryButton">Gallery</a>
+        
     </div>
     <div class="galleryContainer" id="gallery">
         <h1>GALLERY</h1>
@@ -101,7 +104,7 @@
         <div class="contactTextContainer">
             <div class="addressContainer">
                 <h1>Address</h1>
-                <a href="https://maps.app.goo.gl/5dt13tzp9m4nZyTR9" target="_blank">850 Woodside Road Redwood City, CA 94061, United States</a>
+                <a href="https://maps.app.goo.gl/5dt13tzp9m4nZyTR9" target="_blank">850 Woodside Road Redwood City<br/> CA 94061, United States</a>
             </div>
             <div class="contactinfoContainer">
                 <h1>Socials</h1>
