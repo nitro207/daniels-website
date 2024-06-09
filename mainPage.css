@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.main{
+    background-color: black;
+}
 header{
     background-color: black;
     padding: 20px;
@@ -37,6 +40,7 @@ nav li a{
     flex-grow: 1;
     padding: 10px;
     font-size: 1.5rem;
+    z-index: 1000;
 }
 nav li :hover{
     -webkit-text-fill-color: #222831;
@@ -48,13 +52,17 @@ nav li :hover{
 }
 
 .gifContainer{
-    width: 100%;
+    width: auto;
     height: 100%;
+    margin: -90px 0px;
+    z-index: -10;
+    text-align: center;
 }
 .fryingVideo{
+    position: relative;
     height: auto;
     width: 100%;
-    
+    z-index: -10;
 }
 .fryingImg{
     width: 100%;
@@ -86,6 +94,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
+    z-index: 1000;
 }
 .number{
     font-size: 1rem;
@@ -101,6 +110,7 @@ header{
     justify-content: space-around;
     text-align: center;
     height: auto;
+    z-index: 1000;
 }
 .headerIcons a{
     display: flex;
@@ -133,6 +143,11 @@ header{
 .danielFoodImg{
     width: 60%;
     height: auto;
+}
+.line{
+    width: 60%;
+    border-color: #f96d00;
+    margin-top: 40px;
 }
 .valuesContainer{
     display: flex;
@@ -197,6 +212,9 @@ header{
     -webkit-text-fill-color: white;
     margin: 0;
 }
+.contactContainer h1{
+    margin: 0;
+}
 .contactTextContainer{
     width: 100%;
     display: inline-flex;
@@ -238,15 +256,20 @@ header{
     width: 90%;
     height: auto;
 }
+.galleryTitle{
+    text-align: center;
+}
 .galleryContainer{
     text-align: center;
+    background-color: gray;
+    z-index: ;
 }
 .slideshow-container {
     position: relative;
     width: 40%;
     height: auto;
     aspect-ratio: 1 /1 ;
-    margin: 10px auto;
+    margin: 0px auto;
     overflow: hidden;
 }
 
@@ -260,7 +283,7 @@ header{
 .slides img {
     width: 100%;
     height: auto;
-    z-index: -2;
+    z-index: 1;
     object-fit: contain;
 
 }
@@ -272,20 +295,25 @@ header{
     top: 50%;
     transform: translateY(-50%);
     padding: 16px;
-    color: red;
+    color: #ffffff;
     font-weight: bold;
     font-size: 24px;
-    z-index: 1; /* Set z-index to bring arrow buttons above images */
+    z-index: 5; /* Set z-index to bring arrow buttons above images */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+    
 }
 
 .prev {
     left: 0;
+    border-radius: 0 15% 15% 0;
 }
 
 .next {
     right: 0;
+    border-radius: 15% 0 0 15%;
 }
-
 
 
 
@@ -296,7 +324,23 @@ header{
     .danielFoodImg{
         width: 100%;
     }
-    .danielDescLine{
-        display: none;
+    .restNameDesc{
+        font-size: 0;
+    }
+    .number, .email{
+        font-size: .75rem;
+    }
+    .headerLogoContainer{
+        width: 30%;
+    }
+    .gifContainer{
+        width: auto;
+        height: 100%;
+        margin: -50px 0px;
+        z-index: -10;
+        text-align: center;
+    }
+    .contactTextContainer{
+        flex-direction: column;
     }
 }
