@@ -38,12 +38,13 @@ nav li a{
     text-decoration: none;
     -webkit-text-fill-color: white;
     flex-grow: 1;
-    padding: 10px;
+    padding: 3%;
     font-size: 1.5rem;
     z-index: 1000;
 }
 nav li :hover{
     -webkit-text-fill-color: #222831;
+    cursor: pointer;
 }
 
 .sticky{
@@ -71,7 +72,7 @@ nav li :hover{
 header{
     display: flex;
     flex-direction: column;
-
+    text-align: center;
 }
 .title{
     display: flex;
@@ -87,8 +88,10 @@ header{
 }
 .headerInfo{
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
     align-items: flex-end;
+    padding: 0 25%;
 }
 .headerContactInfo{
     display: flex;
@@ -97,11 +100,11 @@ header{
     z-index: 1000;
 }
 .number{
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 5px;
 }
 .email{
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 5px;
     text-decoration: none;
 }
@@ -115,19 +118,24 @@ header{
 .headerIcons a{
     display: flex;
     align-items: center;
+
 }
 .headerIcons a img{
-    width: 75%;
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
+    padding: 0 5px;
+}
+.headerLogoContainer{
+    margin: auto;
 }
 
 .headerLogoContainer img{
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-
 }
+
 .danielsDesc{
     text-align: center;
     background-color: black;
@@ -136,6 +144,26 @@ header{
 .danielDescText{
     -webkit-text-fill-color: #f2f2f2;
     padding: 0px 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.danielDescText h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 10px;
+    -webkit-text-fill-color: #f96d00;
+}
+.danielDescText h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.danielDescText p{
+    width: 50%;
+    height: auto;
+    font-size: 1.5rem;
 }
 .danielDescLine{
     -webkit-text-fill-color: #f2f2f2;
@@ -145,7 +173,7 @@ header{
     height: auto;
 }
 .line{
-    width: 60%;
+    width: 73%;
     border-color: #f96d00;
     margin-top: 40px;
 }
@@ -155,8 +183,9 @@ header{
     padding: 0% 12%;
 }
 .valueTextContainer{
-    padding: 20px;
+    padding: 3%;
     -webkit-text-fill-color: white;
+    font-size: 1.25rem;
 }
 .valueTextContainer h1{
     -webkit-text-fill-color: #f96d00;
@@ -167,19 +196,22 @@ header{
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 30px 10px;
+    padding: 30px 20%;
 }
 .servicesContainer h1{
     margin: 0px;
     padding: 10px;
+    font-size: 3rem;
 }
 .servicesContainer h2{
     padding: 0px 20%;
     margin: 0px;
+    font-size: 2rem;
 }
 .servicesContainer p{
-    padding: 0px 20%;
+    padding: 10px 20%;
     margin: 5px;
+    font-size: 1.5rem;
 }
 .cateringContainer{
     background-color: black;
@@ -188,18 +220,21 @@ header{
     flex-direction: column;
     padding: 30px 10px;
     -webkit-text-fill-color: white;
+    padding: 30px 20%;
 }
 .cateringContainer h1{
     margin: 0px;
     padding: 10px;
+    font-size: 3rem;
 }
 .cateringContainer h2{
     padding: 0px 20%;
     margin: 0px;
 }
 .cateringContainer p{
-    padding: 0px 20%;
+    padding: 10px 20%;
     margin: 5px;
+    font-size: 1.5rem;
 }
 .galleryButton{
     -webkit-text-fill-color: #f96d00;
@@ -333,6 +368,15 @@ header{
     .headerLogoContainer{
         width: 30%;
     }
+    .headerIcons img{
+        display: none;
+    }
+    .headerContactInfo{
+        display: none;
+    }
+    .headerIcons a{
+        width: auto;
+    }
     .gifContainer{
         width: auto;
         height: 100%;
@@ -342,5 +386,20 @@ header{
     }
     .contactTextContainer{
         flex-direction: column;
+    }
+    .headerInfo{
+        padding: 0;
+    }
+    .danielDescText p{
+        width: 100%;
+    }
+    .servicesContainer {
+        padding: 30px 15%;
+    }
+    .servicesContainer p{
+        padding: 0;
+    }
+    .servicesContainer h2{
+        display: none;
     }
 }
